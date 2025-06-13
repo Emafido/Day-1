@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Photo App</title>
+  <style>
+    body{
+      background:linear-gradient(#dfffbb,#d1f0e0,#96c7b9) ;
+    }
+    fieldset{
+      width: calc(60vw + 10px);
+      margin: 1rem 0;
+    }
+    button{
+      color: rgb(71, 71, 71);
+      border:.4px solid rgb(71, 71, 71);
+      border-radius: 2px;
+    }
+    footer{
+      text-align: center;
+    }
+      img{
+        width: calc(65% - 1px);
+        height: calc(65% - 1px);
+      }
+      @media (max-width:450px) {
+        fieldset{
+      width: calc(80vw + 10px);
+      margin: 1rem 0;
+    }
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CatPhotoApp</h1>
+    <h2>Cat Photos</h2>
+    <p>Everone loves <a href="#">cute cats</a> online!</p>
+    <p>See more <a href="#">cat photos</a> in our gallery.</p>
+    <img src="img/relaxing-cat.jpg" alt="relaxing cat">
+  </header>
+  <main>
+    <h2>Cat Lists</h2>
+    <b>Things cats love:</b>
+    <ul>
+      <li>catnip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <figure>
+      <img src="img/lasagna.jpg" alt="lasanga">
+      <figcaption>Cats <i>love</i> lasanga.</figcaption>
+    </figure>
+    <b>Top 3 things cats hate:</b>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+    <figure>
+      <img src="img/cats.jpg" alt="cats">
+      <figcaption>Cats <b>hate</b> other cats.</figcaption>
+    </figure>
+    <h2>Cat Form</h2>
+    <fieldset>
+      <legend>
+        Is your cat an indoor or outdoor cat?
+      </legend>
+      <div class="questions">
+        <label><input type="radio" name="cat-type" value="indoor">Indoor</label>
+        <label><input type="radio" name="cat-type" value="Outdoor">Outdoor</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>
+        What's your cat's personality?
+      </legend>
+      <div class="questions">
+        <label><input type="checkbox" name="cat-personality" value="loving">Loving</label>
+        <label><input type="checkbox" name="cat-personality" value="lazy">Lazy</label>
+        <label><input type="checkbox" name="cat-personality" value="energetic">Energetic</label>
+      </div>
+    </fieldset>
+    <input type="text" placeholder="Cat photo URl">
+    <button>Submit</button>
+  </main>
+  <footer>
+    <p>No Copyright - <a href="#">freecodecamp.org</a></p>
+  </footer>
+</body>
+</html>
